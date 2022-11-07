@@ -13,7 +13,7 @@ function getPlayerSelection()
 {
     console.log("Choose Rock Paper or Scissors");
     let selection = prompt("Choose Rock Paper or Scissors");
-    while(selection != "Rock" && selection  != "Scissors" && selection != "Paper")
+    while(selection.toLowerCase() != "rock" && selection.toLowerCase()  != "scissors" && selection.toLowerCase() != "paper")
     {
         alert(`${selection} is not a valid choice, please try again`);
         selection=prompt("Choose Rock Paper or Scissors");
